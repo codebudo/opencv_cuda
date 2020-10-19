@@ -1,0 +1,7 @@
+*.swp
+*.swo
+build
+vendor
+*.jpg
+*.JPG
+bin
