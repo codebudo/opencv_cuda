@@ -30,5 +30,5 @@ docker:
 
 .PHONY: shell
 shell:
-	docker run -ti -v ${CURRENT_DIR}:/data --workdir=/data opencv_cuda_build bash
-
+	docker run --gpus all -ti -v ${CURRENT_DIR}:/data --workdir=/data opencv_cuda_build bash
+	#With the command "--gpus all" the container has access to the GPU.
